@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'DosisBold';
+    src: url('../public/fonts/DosisFont/Dosis-Bold.woff2') format('woff2'),
+      url('../public/fonts/DosisFont/Dosis-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'interRegular';
+    src: url('../public/fonts/Inter-Full-Version/Web/Inter/Inter-Regular.woff2') format('woff2'),
+      url('../public/fonts/Inter-Full-Version/Web/Inter/Inter-Regular.woff') format('woff');
+}
