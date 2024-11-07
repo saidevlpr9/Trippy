@@ -1,6 +1,4 @@
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { DestinationCard } from "../Components/AceternityUi/DestnationsCard";
 import ExpandableCardDemo from "../Components/AceternityUi/PackagesCards";
 export default function OurPackages() {
   return (

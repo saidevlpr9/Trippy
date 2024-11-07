@@ -5,7 +5,8 @@ import HeroSection from './sections/HeroSection.jsx';
 import HowTrippyWorks from './sections/HowTrippyWorks.jsx';
 import Categories from './sections/Categories.jsx';
 import OurPackages from './sections/OurPackages.jsx';
-import UserTestimonials from './sections/UserTestimonials.jsx';
+import Testimonials from './sections/Testimonials.jsx';
+import Faqs from './sections/Faqs.jsx';
 function App() {
   
   return (
@@ -15,7 +16,8 @@ function App() {
     <HowTrippyWorks/>
     <Categories/>
     <OurPackages/>
-    <UserTestimonials/>
+    <Testimonials/>
+    <Faqs/>
     </>
       );
 
