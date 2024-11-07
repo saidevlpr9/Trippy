@@ -202,7 +202,7 @@ const cards = [
     title: "Himalayan Adventure in Himachal Pradesh",
     description:
       "An exhilarating trek through Himachal’s stunning mountain trails.",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7uQGRo1iQkkFMzAE6wph_dqDRBHlSHzpyQ&s",
+    src: "https://cdn.britannica.com/74/114874-050-6E04C88C/North-Face-Mount-Everest-Tibet-Autonomous-Region.jpg",
     ctaText: "Book Now",
     ctaLink: "https://example.com/book",
     content: () => (

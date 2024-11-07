@@ -7,6 +7,7 @@ import Categories from './sections/Categories.jsx';
 import OurPackages from './sections/OurPackages.jsx';
 import Testimonials from './sections/Testimonials.jsx';
 import Faqs from './sections/Faqs.jsx';
+import Footer from './Components/Footer.jsx';
 function App() {
   
   return (
@@ -18,6 +19,7 @@ function App() {
     <OurPackages/>
     <Testimonials/>
     <Faqs/>
+    <Footer/>
     </>
       );
 
