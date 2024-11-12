@@ -9,6 +9,7 @@ import ContactUs from "./pages/ContactUs.jsx";
 import TravelNow from "./pages/TravelNow.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
+import Tour from "./pages/Tour.jsx";
 
 function App() {
   function Layout() {
@@ -46,6 +47,10 @@ function App() {
         {
           path: "/login",
           element: <LoginPage />,
+        },
+        {
+          path: "/tour",
+          element: <Tour />,
         },
       ],
     },

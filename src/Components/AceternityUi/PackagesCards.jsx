@@ -2,6 +2,7 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../../hooks/use-outside-click";
+import { Link } from "react-router-dom";
 
 export default function ExpandableCardDemo() {
   const [active, setActive] = useState(null);
@@ -88,13 +89,15 @@ export default function ExpandableCardDemo() {
                       {active.description}
                     </motion.p>
                   </div>
-                  <button
-                    href={active.ctaLink}
-                    target="_blank"
-                    className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 text-nowrap"
-                  >
-                    {active.ctaText}
-                  </button>
+                  <Link to="/tour">
+                    <button
+                      href={active.ctaLink}
+                      target="_blank"
+                      className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 text-nowrap"
+                    >
+                      {active.ctaText}
+                    </button>
+                  </Link>
                 </div>
                 <div className="pt-4 relative px-4">
                   <motion.div
