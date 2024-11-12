@@ -1,28 +1,55 @@
-import './App.css'
-import './index.css'
-import Header from './Components/Header.jsx';
-import HeroSection from './sections/HeroSection.jsx';
-import HowTrippyWorks from './sections/HowTrippyWorks.jsx';
-import Categories from './sections/Categories.jsx';
-import OurPackages from './sections/OurPackages.jsx';
-import Testimonials from './sections/Testimonials.jsx';
-import Faqs from './sections/Faqs.jsx';
-import Footer from './Components/Footer.jsx';
+import "./App.css";
+import "./index.css";
+import Header from "./Components/Header.jsx";
+import Footer from "./Components/Footer.jsx";
+import LandingPage from "./pages/LandingPage.jsx";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import AboutUs from "./pages/AboutUs.jsx";
+import ContactUs from "./pages/ContactUs.jsx";
+import TravelNow from "./pages/TravelNow.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
+
 function App() {
-  
+  function Layout() {
+    return (
+      <>
+        <Header />
+        <Outlet />
+        <Footer />
+      </>
+    );
+  }
+
+  const AppLayout = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/",
+          element: <LandingPage />,
+        },
+        {
+          path: "/aboutUs",
+          element: <AboutUs />,
+        },
+        {
+          path: "/contactUs",
+          element: <ContactUs />,
+        },
+        {
+          path: "/travelNow",
+          element: <TravelNow />,
+        },
+      ],
+    },
+  ]);
+
   return (
     <>
-    <Header/>
-    <HeroSection/>
-    <HowTrippyWorks/>
-    <Categories/>
-    <OurPackages/>
-    <Testimonials/>
-    <Faqs/>
-    <Footer/>
+      <RouterProvider router={AppLayout} />
     </>
-      );
-
+  );
 }
-
-export default App
+export default App;
