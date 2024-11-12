@@ -24,7 +24,7 @@ export default function Header() {
         </Link>
       </div>
       <div>
-        <button className="bg-[#017434] text-white py-2 px-4 ">Login</button>
+        <button className="bg-[white] text-[#017434] py-2 px-4 ">Login</button>
       </div>
     </div>
   );
