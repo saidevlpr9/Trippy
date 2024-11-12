@@ -8,6 +8,7 @@ import AboutUs from "./pages/AboutUs.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import TravelNow from "./pages/TravelNow.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
+import LoginPage from "./pages/LoginPage.jsx";
 
 function App() {
   function Layout() {
@@ -41,6 +42,10 @@ function App() {
         {
           path: "/travelNow",
           element: <TravelNow />,
+        },
+        {
+          path: "/login",
+          element: <LoginPage />,
         },
       ],
     },

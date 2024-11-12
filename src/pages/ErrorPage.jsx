@@ -9,11 +9,10 @@ const ErrorPage = () => {
         <div className="row">
           <div className="col-sm-12 ">
             <div className="col-sm-10 col-sm-offset-1  text-center">
-              <div className="four_zero_four_bg">
-                <h1 className="text-center ">404</h1>
-              </div>
+              <h1 className="text-center mr-7">404</h1>
+              <div className="four_zero_four_bg"></div>
 
-              <div className=" text-xl">
+              <div className="mt-[] text-xl">
                 <h3 className="h2">Look like you're lost</h3>
 
                 <p>the page you are looking for not avaible!</p>
