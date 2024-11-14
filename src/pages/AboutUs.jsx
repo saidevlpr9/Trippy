@@ -1,10 +1,14 @@
+import InActive from "../Components/InActive";
+import useActiveStatus from "../utils/useActiveStatus";
+
 const AboutUs = () => {
-  return (
+  const activeStatus = useActiveStatus();
+  return activeStatus ? (
     <>
-      <div className="bg-black h-screen">
+      <div className="bg-black">
         <h1 className="text-white text-center py-9">About Us</h1>
         <div className="flex justify-center items-center">
-          <div className="px-44">
+          <div className="p-10 md:px-44">
             <div>
               <p className="text-white text-lg text-pretty">
                 Welcome to Trippy, your travel companion app designed to make
@@ -48,6 +52,8 @@ const AboutUs = () => {
         </div>
       </div>
     </>
+  ) : (
+    <InActive />
   );
 };
 export default AboutUs;

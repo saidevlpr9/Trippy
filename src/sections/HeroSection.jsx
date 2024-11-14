@@ -9,7 +9,7 @@ export default function HeroSection() {
           <h1>Every Mile Tells a Story, Make Yours Epic !</h1>
         </div>
         <Link to="/travelNow">
-          <button className="ml-16">Travel Now !</button>
+          <button className="ml-6">Travel Now !</button>
         </Link>
       </div>
     </div>
