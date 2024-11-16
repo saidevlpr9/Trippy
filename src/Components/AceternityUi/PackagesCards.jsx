@@ -89,9 +89,9 @@ export default function ExpandableCardDemo() {
                       {active.description}
                     </motion.p>
                   </div>
-                  <Link to="/tour">
+                  <Link to={active.ctaLink}>
                     <button
-                      href={active.ctaLink}
+                      // href={active.ctaLink}
                       target="_blank"
                       className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 text-nowrap"
                     >
@@ -188,7 +188,7 @@ const cards = [
       "Experience the tranquility of Kerala’s backwaters with a stay on a traditional houseboat.",
     src: "https://images.weblogtheworld.com/wp-content/uploads/Ind-Sunset.jpg",
     ctaText: "Book Now",
-    ctaLink: "https://example.com/book",
+    ctaLink: "/kerala",
     content: () => (
       <>
         <p>Location: Alleppey, Kumarakom, Vembanad Lake</p>
@@ -207,7 +207,7 @@ const cards = [
       "An exhilarating trek through Himachal’s stunning mountain trails.",
     src: "https://cdn.britannica.com/74/114874-050-6E04C88C/North-Face-Mount-Everest-Tibet-Autonomous-Region.jpg",
     ctaText: "Book Now",
-    ctaLink: "https://example.com/book",
+    ctaLink: "/himachalPradesh",
     content: () => (
       <>
         <p>Location: Manali, Rohtang Pass, Solang Valley</p>
@@ -223,7 +223,7 @@ const cards = [
       "Explore the Thar Desert with camel rides, cultural performances, and luxury desert camps.",
     src: "https://www.flamingotravels.co.in/blog/wp-content/uploads/2020/12/Rajasthan-Tour-Packages.jpg",
     ctaText: "Book Now",
-    ctaLink: "https://example.com/book",
+    ctaLink: "/rajasthan",
     content: () => (
       <>
         <p>Location: Jaisalmer, Sam Sand Dunes, Kuldhara Village</p>
@@ -239,7 +239,7 @@ const cards = [
       "Discover Varanasi’s spirituality, visiting ancient ghats and temples.",
     src: "https://www.indiatravel.app/wp-content/uploads/2024/04/best-time-to-visit-varanasi.jpg",
     ctaText: "Book Now",
-    ctaLink: "https://example.com/book",
+    ctaLink: "/varanasi",
     content: () => (
       <>
         <p>Location: Varanasi, Kashi Vishwanath Temple, Ganges River</p>

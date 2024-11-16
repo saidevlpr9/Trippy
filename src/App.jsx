@@ -10,6 +10,12 @@ import TravelNow from "./pages/TravelNow.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import Tour from "./pages/Tour.jsx";
+import PasswordReset from "./pages/PasswordReset";
+import Signup from "./pages/Signup";
+import Kerala from "./pages/Kerala";
+import Varanasi from "./pages/Varanasi";
+import Rajasthan from "./pages/Rajasthan";
+import HimachalPradesh from "./pages/HimachalPradesh";
 
 function App() {
   function Layout() {
@@ -51,6 +57,26 @@ function App() {
         {
           path: "/tour",
           element: <Tour />,
+        },
+        {
+          path: "/Signup",
+          element: <Signup />,
+        },
+        {
+          path: "/kerala",
+          element: <Kerala />,
+        },
+        {
+          path: "/varanasi",
+          element: <Varanasi />,
+        },
+        {
+          path: "/rajasthan",
+          element: <Rajasthan />,
+        },
+        {
+          path: "/himachalPradesh",
+          element: <HimachalPradesh />,
         },
       ],
     },

@@ -13,7 +13,7 @@ export default function Header() {
           Trippy
         </div>
       </Link>
-      <div className="md:flex gap-6 text-xl hidden md:block">
+      <div className="md:flex gap-6 text-xl hidden">
         <Link to="/" className="text-[#b9dcbc] hover:text-white">
           Home
         </Link>
