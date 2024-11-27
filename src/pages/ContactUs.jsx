@@ -28,12 +28,12 @@ const ContactUs = () => {
   };
 
   return activeStatus ? (
-    <div className="bg-black h-auto p-6 md:p-24 flex justify-center items-center">
-      <div>
-        <Card className="h-auto p-4">
+    <div className="bg-white h-auto p-6 md:p-24 flex justify-center w-full items-center">
+      <div className="flex justify-center">
+        <Card className="h-auto p-4 bg-black text-white w-3/4">
           <CardHeader>
             <CardTitle>Contact Us</CardTitle>
-            <CardDescription>
+            <CardDescription className="text-white">
               We'd love to hear from you! Fill out the form below and we'll get
               back to you soon.
             </CardDescription>
@@ -41,10 +41,7 @@ const ContactUs = () => {
           <CardContent>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                <label htmlFor="name" className="block text-sm font-medium ">
                   Name
                 </label>
                 <Input
@@ -57,10 +54,7 @@ const ContactUs = () => {
                 />
               </div>
               <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                <label htmlFor="email" className="block text-sm font-medium ">
                   Email
                 </label>
                 <Input
@@ -75,7 +69,7 @@ const ContactUs = () => {
               <div className="mb-4">
                 <label
                   htmlFor="mobileNumber"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-medium "
                 >
                   Mobile Number
                 </label>
@@ -89,10 +83,7 @@ const ContactUs = () => {
                 />
               </div>
               <div className="mb-4">
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                <label htmlFor="message" className="block text-sm font-medium ">
                   Message
                 </label>
                 <Textarea
@@ -110,7 +101,7 @@ const ContactUs = () => {
             </form>
           </CardContent>
           <CardFooter className="flex flex-col gap-3">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-white">
               Have questions? Feel free to reach out anytime. We're here to
               help!
             </p>

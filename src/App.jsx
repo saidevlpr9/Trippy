@@ -16,6 +16,7 @@ import Kerala from "./pages/Kerala";
 import Varanasi from "./pages/Varanasi";
 import Rajasthan from "./pages/Rajasthan";
 import HimachalPradesh from "./pages/HimachalPradesh";
+import ConstructionPage from "./pages/ConstructionPage";
 
 function App() {
   function Layout() {
@@ -56,7 +57,7 @@ function App() {
         },
         {
           path: "/tour",
-          element: <Tour />,
+          element: <ConstructionPage />,
         },
         {
           path: "/Signup",
@@ -64,19 +65,23 @@ function App() {
         },
         {
           path: "/kerala",
-          element: <Kerala />,
+          element: <ConstructionPage />,
         },
         {
           path: "/varanasi",
-          element: <Varanasi />,
+          element: <ConstructionPage />,
         },
         {
           path: "/rajasthan",
-          element: <Rajasthan />,
+          element: <ConstructionPage />,
         },
         {
           path: "/himachalPradesh",
-          element: <HimachalPradesh />,
+          element: <ConstructionPage />,
+        },
+        {
+          path: "/inprogress",
+          element: <ConstructionPage />,
         },
       ],
     },
